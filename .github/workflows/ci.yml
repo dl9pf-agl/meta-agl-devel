@@ -23,6 +23,6 @@ permissions:
 
 jobs:
   ci:
-    uses: dl9pf-agl/agl-ci/.github/workflows/layer-ci.yml@05de74fc233662087a9228d058adb50318a88aaf # main (agl-ci 05de74f: fetch.sh fix, 48 h build limit)
+    uses: dl9pf-agl/agl-ci/.github/workflows/layer-ci.yml@480edd99be55e6a5302262d33bce17f5afb36325 # main (agl-ci 480edd9: cosign-installer 4.1.3, git mirror rewrite)
     with:
       mode: ${{ inputs.mode || 'build' }}   # without this the dispatch input `mode` is ignored (the default `build` of layer-ci.yml always wins)
