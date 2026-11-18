@@ -23,6 +23,6 @@ permissions:
 
 jobs:
   ci:
-    uses: dl9pf-agl/agl-ci/.github/workflows/layer-ci.yml@480edd99be55e6a5302262d33bce17f5afb36325 # main (agl-ci 480edd9: cosign-installer 4.1.3, git mirror rewrite)
+    uses: dl9pf-agl/agl-ci/.github/workflows/layer-ci.yml@d22b3ac1398330269229d4f8e7cc1006ec065a06 # main (agl-ci d22b3ac: fetch via git mirror, fetch retry and cap, artifact upload off)
     with:
       mode: ${{ inputs.mode || 'build' }}   # without this the dispatch input `mode` is ignored (the default `build` of layer-ci.yml always wins)
