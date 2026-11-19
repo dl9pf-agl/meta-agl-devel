@@ -23,6 +23,6 @@ permissions:
 
 jobs:
   ci:
-    uses: dl9pf-agl/agl-ci/.github/workflows/layer-ci.yml@d22b3ac1398330269229d4f8e7cc1006ec065a06 # main (agl-ci d22b3ac: fetch via git mirror, fetch retry and cap, artifact upload off)
+    uses: dl9pf-agl/agl-ci/.github/workflows/layer-ci.yml@589330e3183e00f8e768a27a41e22cb25fc833b5 # main (agl-ci 589330e: a cancel stops builds, !cancelled() instead of always())
     with:
       mode: ${{ inputs.mode || 'build' }}   # without this the dispatch input `mode` is ignored (the default `build` of layer-ci.yml always wins)
