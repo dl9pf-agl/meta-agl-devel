@@ -23,6 +23,6 @@ permissions:
 
 jobs:
   ci:
-    uses: dl9pf-agl/agl-ci/.github/workflows/layer-ci.yml@589330e3183e00f8e768a27a41e22cb25fc833b5 # main (agl-ci 589330e: a cancel stops builds, !cancelled() instead of always())
+    uses: dl9pf-agl/agl-ci/.github/workflows/layer-ci.yml@894f155b7e9b7b2e2cf9756042de92ddabc0087b # main (agl-ci 894f155: the second fork gate, job approve, is commented out)
     with:
       mode: ${{ inputs.mode || 'build' }}   # without this the dispatch input `mode` is ignored (the default `build` of layer-ci.yml always wins)
