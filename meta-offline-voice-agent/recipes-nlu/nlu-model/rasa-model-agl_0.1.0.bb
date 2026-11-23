@@ -7,7 +7,9 @@ SRC_URI = " \
     git://gerrit.automotivelinux.org/gerrit/src/rasa-model-agl;protocol=https;branch=${AGL_BRANCH} \
 "
 
-SRCREV = "${AUTOREV}"
+# Fixed, not ${AUTOREV}: a release must build the same source. Tip of master on 2026-11-23. On a release branch
+# of this layer, set AGL_BRANCH and this revision together (the revision must be on that branch).
+SRCREV = "59857bd999cccee100ff87ac51705e48227cb06c"
 
 do_install() {
     install -d ${D}/usr/share/nlu/rasa
