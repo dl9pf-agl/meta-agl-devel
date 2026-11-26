@@ -23,6 +23,6 @@ permissions:
 
 jobs:
   ci:
-    uses: dl9pf-agl/agl-ci/.github/workflows/layer-ci.yml@36519c3879b4a1e5e94fc47c8f85b7e51888d228 # main (agl-ci 36519c3: nightly images in the folder of their own repo)
+    uses: dl9pf-agl/agl-ci/.github/workflows/layer-ci.yml@3c78c851203738888e793cb70c655aad555f21fd # main (agl-ci 3c78c85: one folder per image, public when built)
     with:
       mode: ${{ inputs.mode || 'build' }}   # without this the dispatch input `mode` is ignored (the default `build` of layer-ci.yml always wins)
