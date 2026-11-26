@@ -23,6 +23,6 @@ permissions:
 
 jobs:
   ci:
-    uses: dl9pf-agl/agl-ci/.github/workflows/layer-ci.yml@3c78c851203738888e793cb70c655aad555f21fd # main (agl-ci 3c78c85: one folder per image, public when built)
+    uses: dl9pf-agl/agl-ci/.github/workflows/layer-ci.yml@9d2231e8357a80d0efa1ed2f62522c69bcf37b70 # main (agl-ci 9d2231e: a kas file next to every image)
     with:
       mode: ${{ inputs.mode || 'build' }}   # without this the dispatch input `mode` is ignored (the default `build` of layer-ci.yml always wins)
